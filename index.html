@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrestigeDrive Rentals — Premium Cars. Effortless Journeys.</title>
+  <meta name="description" content="PrestigeDrive Rentals — Premium luxury car hire for business and leisure. Book instantly via WhatsApp. Mercedes, BMW, Rolls-Royce and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ===== MOBILE NAV ===== -->
+<div class="mobile-nav-overlay" id="overlay" onclick="closeMobileNav()"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <button class="close-nav" onclick="closeMobileNav()">&#x2715;</button>
+  <ul class="nav-links">
+    <li><a href="index.html" onclick="closeMobileNav()">Home</a></li>
+    <li><a href="fleet.html" onclick="closeMobileNav()">Fleet</a></li>
+    <li><a href="pricing.html" onclick="closeMobileNav()">Pricing</a></li>
+    <li><a href="contact.html" onclick="closeMobileNav()">Contact</a></li>
+    <li><a href="terms.html" onclick="closeMobileNav()">Terms</a></li>
+  </ul>
+  <a href="https://wa.me/1234567890?text=Hello%20PrestigeDrive!%20I%27d%20like%20to%20make%20a%20booking." class="mobile-nav-cta" target="_blank">Book via WhatsApp</a>
+</nav>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-brand">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 17h18M5 17V9l2-4h10l2 4v8" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="7.5" cy="17.5" r="1.5" fill="#111"/>
+        <circle cx="16.5" cy="17.5" r="1.5" fill="#111"/>
+        <path d="M5 11h14" stroke="#111" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">PrestigeDrive</span>
+      <span class="nav-logo-tag">Premium Rentals</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fleet.html">Fleet</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+  <a href="https://wa.me/1234567890?text=Hello%20PrestigeDrive!%20I%27d%20like%20to%20make%20a%20booking." class="nav-cta" target="_blank">Book Now</a>
+  <button class="hamburger" onclick="openMobileNav()"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg-wrap">
+    <img class="hero-bg-img" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=90" alt="Luxury car hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-noise"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Luxury Car Rental</div>
+    <h1>Premium Cars.<br><span>Effortless</span> Journeys.</h1>
+    <p class="hero-sub">Curated fleet of the world's finest automobiles — delivered to your door, ready to impress.</p>
+    <div class="hero-btns">
+      <a href="fleet.html" class="btn-gold ripple-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        View Fleet
+      </a>
+      <a href="tel:+11234567890" class="btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.26 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.72 6.72l1.06-1.53a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><span class="trust-num" data-count="240">0</span><span class="trust-label">Premium Vehicles</span></div>
+      <div class="trust-item"><span class="trust-num" data-count="98">0</span><span class="trust-label">% Satisfaction</span></div>
+      <div class="trust-item"><span class="trust-num" data-count="14000">0</span><span class="trust-label">Happy Clients</span></div>
+      <div class="trust-item"><span class="trust-num" data-count="32">0</span><span class="trust-label">Cities Served</span></div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l5 5 5-5"/></svg>
+    Scroll
+  </div>
+</section>
+
+<!-- ===== BOOKING BAR ===== -->
+<div class="booking-bar reveal">
+  <div class="booking-field">
+    <label>Pickup Location</label>
+    <select><option>City Centre</option><option>Airport Terminal 1</option><option>Airport Terminal 2</option><option>Hotel Delivery</option></select>
+  </div>
+  <div class="booking-field"><label>Pickup Date</label><input type="date"></div>
+  <div class="booking-field"><label>Return Date</label><input type="date"></div>
+  <div class="booking-field">
+    <label>Vehicle Class</label>
+    <select><option>Any Class</option><option>Business Sedan</option><option>Luxury SUV</option><option>Sports Car</option><option>Convertible</option><option>Executive Class</option></select>
+  </div>
+  <button class="booking-submit ripple-btn" onclick="openWhatsApp('Hello PrestigeDrive! I\'d like to check vehicle availability. Please assist me.')">Check Availability</button>
+</div>
+
+<!-- ===== FLEET PREVIEW ===== -->
+<section class="section section-dark" id="fleet">
+  <div class="fleet-header">
+    <div>
+      <div class="section-eyebrow">Our Fleet</div>
+      <h2 class="section-title">Drive the <span>Extraordinary</span></h2>
+    </div>
+    <a href="fleet.html" class="btn-outline" style="padding:0.7rem 1.6rem;font-size:0.78rem;">View Full Fleet</a>
+  </div>
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-pill active" data-filter="all">All</button>
+    <button class="filter-pill" data-filter="sedan">Business Sedan</button>
+    <button class="filter-pill" data-filter="suv">Luxury SUV</button>
+    <button class="filter-pill" data-filter="sports">Sports Car</button>
+    <button class="filter-pill" data-filter="convertible">Convertible</button>
+    <button class="filter-pill" data-filter="executive">Executive</button>
+  </div>
+  <div class="fleet-grid" id="fleetGrid"></div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<div class="stats-bar">
+  <div class="stat-item reveal"><div class="stat-num" data-count="240">0</div><div class="stat-label">Luxury Vehicles</div></div>
+  <div class="stat-item reveal"><div class="stat-num" data-count="32">0</div><div class="stat-label">Cities Covered</div></div>
+  <div class="stat-item reveal"><div class="stat-num" data-count="10">0</div><div class="stat-label">Years of Excellence</div></div>
+  <div class="stat-item reveal"><div class="stat-num" data-count="14000">0</div><div class="stat-label">Happy Clients</div></div>
+</div>
+
+<!-- ===== WHY PRESTIGE DRIVE ===== -->
+<section class="section" id="why">
+  <div class="section-eyebrow">Why Choose Us</div>
+  <h2 class="section-title">The <span>Gold Standard</span><br>in Luxury Rental</h2>
+  <div class="why-grid">
+    <div class="why-features">
+      <div class="why-item reveal">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div>
+          <div class="why-item-title">Concierge-Grade Service</div>
+          <p class="why-item-desc">24/7 personal assistance from the moment you book until your return. Your dedicated agent handles everything.</p>
+        </div>
+      </div>
+      <div class="why-item reveal" style="transition-delay:0.1s">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <div>
+          <div class="why-item-title">Instant WhatsApp Booking</div>
+          <p class="why-item-desc">Reserve your dream vehicle in under 2 minutes. Confirmed instantly — car delivered ready at your door.</p>
+        </div>
+      </div>
+      <div class="why-item reveal" style="transition-delay:0.2s">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+        <div>
+          <div class="why-item-title">Pristine Condition Guarantee</div>
+          <p class="why-item-desc">Every vehicle is fully detailed and inspected before your journey. Zero compromises on presentation.</p>
+        </div>
+      </div>
+      <div class="why-item reveal" style="transition-delay:0.3s">
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+        <div>
+          <div class="why-item-title">Transparent Fixed Pricing</div>
+          <p class="why-item-desc">What you see is exactly what you pay. No hidden fees, no fuel surprises — ever.</p>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual reveal" style="transition-delay:0.15s">
+      <div class="why-visual-bg">★</div>
+      <p class="why-visual-quote">"The only luxury that truly matters is the one you <span>experience every single mile.</span>"</p>
+      <div class="stars-row"><span class="stars">★★★★★</span><span class="stars-text">4.98 / 5.0 · 14,200+ verified reviews</span></div>
+      <div class="mini-stats">
+        <div class="mini-stat"><div class="mini-stat-num" data-count="32">0</div><div class="mini-stat-label">Cities Covered</div></div>
+        <div class="mini-stat"><div class="mini-stat-num" data-count="10">0</div><div class="mini-stat-label">Years Active</div></div>
+        <div class="mini-stat"><div class="mini-stat-num" data-count="240">0</div><div class="mini-stat-label">Vehicles</div></div>
+        <div class="mini-stat"><div class="mini-stat-num" data-count="98">0</div><div class="mini-stat-label">% Retention</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section-dark" id="reviews">
+  <div class="text-center">
+    <div class="section-eyebrow">Client Stories</div>
+    <h2 class="section-title">Trusted by <span>Discerning Travellers</span></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">Impeccable service. The Mercedes was spotless, team was punctual, and booking took under 3 minutes on WhatsApp. This is now my permanent travel standard.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">JM</div>
+        <div><div class="testi-name">James Morrison</div><div class="testi-role">CEO · FinTech Group, London</div></div>
+      </div>
+    </div>
+    <div class="testi-card reveal" style="transition-delay:0.1s">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">Travelled across 3 cities for client meetings. PrestigeDrive had a car waiting at every airport. Absolute professionalism — this is how business travel should feel.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SK</div>
+        <div><div class="testi-name">Sophia Keller</div><div class="testi-role">Partner · Keller & Associates</div></div>
+      </div>
+    </div>
+    <div class="testi-card reveal" style="transition-delay:0.2s">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">Used PrestigeDrive for our entire family holiday — Porsche Cayenne, child seats pre-installed, no stress. Stunning vehicle, stunning experience. 10/10.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AR</div>
+        <div><div class="testi-name">Ahmed Raza</div><div class="testi-role">Architect · Dubai</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POLICIES ===== -->
+<section class="section" id="policies">
+  <div class="text-center">
+    <div class="section-eyebrow">Policies &amp; Coverage</div>
+    <h2 class="section-title">Renting with <span>Confidence</span></h2>
+    <p class="section-desc">Everything you need to know about our rental policies — clearly stated, no small print surprises.</p>
+  </div>
+  <div class="policies-grid">
+    <div class="policy-card reveal">
+      <div class="policy-icon">🛡️</div>
+      <div class="policy-title">Full Insurance Coverage</div>
+      <p class="policy-text">All vehicles include comprehensive third-party liability insurance. CDW (Collision Damage Waiver) is standard on Premium & Executive tiers.</p>
+      <span class="policy-tag">Included</span>
+    </div>
+    <div class="policy-card reveal" style="transition-delay:0.1s">
+      <div class="policy-icon">↩️</div>
+      <div class="policy-title">Flexible Cancellation</div>
+      <p class="policy-text">Free cancellation up to 72 hours before pickup. 50% refund between 24–72 hours. No refund within 24 hours of scheduled pickup.</p>
+      <span class="policy-tag">Fair Policy</span>
+    </div>
+    <div class="policy-card reveal" style="transition-delay:0.2s">
+      <div class="policy-icon">✈️</div>
+      <div class="policy-title">Airport Pickup Included</div>
+      <p class="policy-text">We meet you at arrivals, assist with luggage, and get you on the road within minutes. All major airports covered across 32 cities.</p>
+      <span class="policy-tag">Complimentary</span>
+    </div>
+    <div class="policy-card reveal" style="transition-delay:0.05s">
+      <div class="policy-icon">⛽</div>
+      <div class="policy-title">Fuel Policy</div>
+      <p class="policy-text">Vehicle provided with a full tank. Return full to avoid refuelling charges at 1.5× pump price + admin fee. Pre-paid fuel package available.</p>
+      <span class="policy-tag">Full-to-Full</span>
+    </div>
+    <div class="policy-card reveal" style="transition-delay:0.15s">
+      <div class="policy-icon">🪪</div>
+      <div class="policy-title">Required Documents</div>
+      <p class="policy-text">Valid driver's licence (held 3+ years), passport or national ID, and a credit card in the renter's name for the security deposit hold.</p>
+      <span class="policy-tag">Standard KYC</span>
+    </div>
+    <div class="policy-card reveal" style="transition-delay:0.25s">
+      <div class="policy-icon">📅</div>
+      <div class="policy-title">Extension Policy</div>
+      <p class="policy-text">Extend your rental anytime by contacting your concierge agent. Subject to vehicle availability. Extensions confirmed within the hour.</p>
+      <span class="policy-tag">Flexible</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section-dark" id="faq">
+  <div class="text-center">
+    <div class="section-eyebrow">FAQ</div>
+    <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+    <p class="section-desc">Quick answers to the questions we hear most often. Still need help? Chat with us on WhatsApp.</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">What documents are required to rent a vehicle?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <div class="faq-a"><div class="faq-a-inner">You'll need a valid driver's licence held for a minimum of 3 years, a government-issued photo ID (passport for international renters), and a credit or debit card in the primary renter's name for the security deposit hold. All documents are verified at pickup.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Is fuel included in the rental price?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <div class="faq-a"><div class="faq-a-inner">All vehicles are provided with a full tank of fuel. We operate a full-to-full policy — simply return the car with a full tank and there are no fuel charges. If you'd prefer not to worry about it, you can add our prepaid Fuel Package at the time of booking.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I extend my rental duration?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <div class="faq-a"><div class="faq-a-inner">Absolutely. Contact your concierge agent via WhatsApp at least 6 hours before your scheduled return and we'll arrange an extension subject to vehicle availability. Extensions are typically confirmed within the hour. Day-rate pricing applies to any additional days.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do you provide airport pickup and drop-off?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes — airport delivery and collection is included across all 32 cities we operate in. Our agent meets you at the arrivals hall, assists with luggage, and has the vehicle ready. Just share your flight details at booking and we handle the rest.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What is your cancellation policy?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <div class="faq-a"><div class="faq-a-inner">Cancellations made 72+ hours before pickup receive a full refund. Between 24–72 hours: 50% refund. Less than 24 hours: no refund. Executive and Sports class vehicles have a 7-day advance cancellation requirement for a full refund. We're always willing to discuss exceptional circumstances — just reach out.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Is there a security deposit? How much?<span class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+      <div class="faq-a"><div class="faq-a-inner">A security deposit hold is placed on your credit card at pickup — the amount varies by vehicle class ($500–$5,000). This is a hold, not a charge, and is released within 3–5 business days of a clean vehicle return. The hold covers potential damage not covered by the CDW, as well as fuel and late fees if applicable.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<div class="cta-section" id="contact">
+  <div class="cta-content">
+    <h2>Book in 2 Minutes.<br>No Forms. No Fuss.</h2>
+    <p>Chat directly with our concierge. Instant confirmation guaranteed, 24/7.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="https://wa.me/1234567890?text=Hello%20PrestigeDrive!%20I%27d%20like%20to%20make%20a%20booking." class="btn-dark ripple-btn" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Book via WhatsApp
+    </a>
+    <a href="tel:+11234567890" class="btn-call">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.26 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.72 6.72l1.06-1.53a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now
+    </a>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="index.html" class="nav-brand" style="display:inline-flex;margin-bottom:0.5rem;">
+        <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17V9l2-4h10l2 4v8" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="17.5" r="1.5" fill="#111"/><circle cx="16.5" cy="17.5" r="1.5" fill="#111"/><path d="M5 11h14" stroke="#111" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="nav-logo-text"><span class="nav-logo-name">PrestigeDrive</span><span class="nav-logo-tag">Premium Rentals</span></div>
+      </a>
+      <p class="footer-brand-desc">Premium luxury car hire for business, leisure, and special occasions. We set the standard others aspire to.</p>
+      <div class="footer-social" style="margin-top:1.2rem;">
+        <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" class="social-btn" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://wa.me/1234567890" class="social-btn" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="fleet.html">Fleet</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a></div>
+    <div class="footer-col"><h4>Services</h4><a href="#">Airport Transfer</a><a href="#">Corporate Accounts</a><a href="#">Chauffeur Service</a><a href="#">Long-Term Rental</a><a href="#">Wedding Cars</a></div>
+    <div class="footer-col"><h4>Contact</h4><a href="https://wa.me/1234567890">WhatsApp Booking</a><a href="mailto:concierge@prestigedrive.com">concierge@prestigedrive.com</a><a href="tel:+11234567890">+1 (234) 567-890</a><a href="contact.html">Visit Our Office</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 PrestigeDrive Rentals. All rights reserved.</span>
+    <div class="footer-links"><a href="terms.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/1234567890?text=Hello%20PrestigeDrive!%20I%27d%20like%20to%20make%20a%20booking." class="wa-float" target="_blank" id="waFloat">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  Book Now
+</a>
+
+<!-- Mobile Call Bar -->
+<a href="tel:+11234567890" class="mobile-call-bar" id="mobileCallBar">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.26 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.72 6.72l1.06-1.53a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  Call Now — +1 (234) 567-890
+</a>
+
+<script src="js/fleet.js"></script>
+</body>
+</html>
